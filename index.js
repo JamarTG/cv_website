@@ -15,14 +15,14 @@ let openOrClosed = false;
 hamburger.onclick = function () {
 
     content.classList.add('unrotate')
-    content.style.transform = openOrClosed ? 'rotateZ(0deg)' : 'rotateZ(20deg)'
+    content.style.transform = openOrClosed ? 'rotateZ(0deg)' : 'rotateZ(15deg)'
     
     socials.classList.toggle('move-left');
 
+    main.classList.toggle('main-margin')
     main.classList.toggle('rotate') 
     main.classList.toggle('dark-bg')
-    main.classList.toggle('add-border')
-    main.classList.toggle('add-height')
+
 
     highBurger.classList.toggle('closed-high')
     midBurger.classList.toggle('closed-mid')
